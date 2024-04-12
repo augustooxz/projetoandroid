@@ -9,49 +9,69 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <TextView
-            android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp">
+
+        <ImageButton
+            android:id="@+id/ImgVoltarmg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_arrow_back"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#ffff"
+            />
+
+        <TextView
+            android:id="@+id/txtlogin"
+            android:layout_width="45dp"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:layout_alignParentRight="true"
             android:layout_gravity="end"
-            android:layout_margin="20dp"
-        />
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:text="Login" />
+
+    </RelativeLayout>
+
     <ImageView
-        android:layout_width="220dp"
-        android:layout_height="150dp"
-        android:src="@drawable/Horizontal_Logo"
-        android:layout_gravity="center"/>
-    <EditText
-        android:layout_width="300sp"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height= "300dp"
         android:layout_gravity="center"
-        android:hint="Usuário:"
-        android:inputType="textPersonName"/>
-
+        android:src="@drawable/horizontal_logo" />
 
     <EditText
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Senha:"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/baseline_person"
+        android:hint=" Usuário:"
+        android:inputType="textPersonName" />
+
+
+    <EditText
         android:id="@+id/password_toggle"
-        android:inputType="textPassword"/>
-<Button
-    android:layout_width="250dp"
-    android:layout_height="50dp"
-    android:layout_gravity="center"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:drawableStart="@drawable/baseline_lock"
+        android:hint=" Senha:"
+        android:inputType="textPassword" />
 
-    />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:backgroundTint="#077078"
+        android:drawableBottom="@drawable/baseline_login" />
 
     <TextView
-        android:layout_width="300dp"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:hint="Ainda não tem uma conta? Cadastre-se"
-        android:layout_gravity="center"/>
-
-
-
+        android:layout_gravity="center"
+        android:hint="Não tem uma conta? Cadastre-se" />
 
 
 </LinearLayout>
