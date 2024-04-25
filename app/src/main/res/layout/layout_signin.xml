@@ -2,77 +2,91 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".signinActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="25dp">
 
+
         <ImageButton
             android:id="@+id/ImgVoltarmg"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:backgroundTint="#ffff"
             android:src="@drawable/baseline_arrow_back" />
 
         <TextView
-            android:id="@+id/txtlogin"
-            android:layout_width="45dp"
+
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_gravity="end"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="20dp"
-            android:text="Login"
+            android:layout_marginEnd="20dp"
+            android:text="@string/sign_up"
             android:textSize="16sp" />
 
     </RelativeLayout>
 
+
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="300dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/horizontal_logo" />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/iconperfil" />
 
     <EditText
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:drawableStart="@drawable/baseline_person"
-        android:hint=" Usuário:"
+        android:hint="@string/nome"
         android:inputType="textPersonName" />
 
-
     <EditText
-        android:id="@+id/password_toggle"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:drawableStart="@drawable/baseline_lock"
-        android:hint=" Senha:"
-        android:inputType="textPassword" />
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:layout_margin="40dp"
-        android:backgroundTint="#077078"
-        android:drawableBottom="@drawable/baseline_login" />
-
-    <TextView
-        android:layout_width="210dp"
+    <EditText
+        android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:clickable="true"
-        android:hint="@string/n_o_tem_uma_conta_cadastre_se" />
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_lock"
+        android:hint="@string/senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_cake"
+        android:hint="@string/anivers_rio"
+        android:inputType="date" />
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF077078"
+        android:importantForAccessibility="no"
+        android:src="@drawable/baseline_person_add_alt" />
 
 
 </LinearLayout>
