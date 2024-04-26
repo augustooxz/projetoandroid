@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FF4371AA">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_hub"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+    android:layout_width="160dp"
+        android:textSize="30dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:hint="Apps Login"
+    android:textColorHint="@color/white"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User"
+        app:startIconDrawable="@drawable/baseline_person"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusBottomStart="150dp"
+        app:boxCornerRadiusBottomEnd="150dp"
+        app:boxCornerRadiusTopEnd="150dp"
+        app:boxCornerRadiusTopStart="150dp"
+        android:backgroundHint="white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        app:startIconDrawable="@drawable/baseline_lock"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusBottomStart="150dp"
+        app:boxCornerRadiusBottomEnd="150dp"
+        app:boxCornerRadiusTopEnd="150dp"
+        app:boxCornerRadiusTopStart="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:backgroundTint="#134481"
+        android:text="Sign In" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Esqueceu a senha?"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="90dp"
+        android:hint="Não tem uma conta? Crie agora"
+        android:textColorHint="@color/white" />
+</LinearLayout>
